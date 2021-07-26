@@ -3,19 +3,41 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 nav {
     display: flex;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: navy;
-    height: 50px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     justify-content: space-around;
     list-style-type: none;
     background-color: rgba(152, 255, 152, 0.5);
-    position: sticky;
-    top: 0;
-    
+    flex-wrap: wrap;
+}
+
+#header {
+    position: fixed;
+    width: 100vw;
+}
+
+#about, #characters, #seasons {
+    text-decoration: none
+}
+
+
+li:hover {
+    transform: scale(1.1);
+}
+
+#logo {
+    display: none;
 }
 
 li {
     align-self: center;
+    transition: all 0.2s ease-in-out;
+    margin: 1em;
+}
+
+a:link {
+    color: black;
 }
