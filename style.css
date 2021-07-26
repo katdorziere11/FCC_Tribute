@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: navy;
+    height: 50px;
+    justify-content: space-around;
+    list-style-type: none;
+    background-color: rgba(152, 255, 152, 0.5);
+    position: sticky;
+    top: 0;
+    
+}
+
+li {
+    align-self: center;
+}
