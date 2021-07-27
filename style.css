@@ -46,6 +46,34 @@ a:visited {
     text-decoration: none;
 }
 
+#image {
+    background-image: url(https://via.placeholder.com/600);
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.7;
+    position: relative;
+    background-repeat: no-repeat;
+
+}
+
+section {
+    text-align: center;
+}
+
+h2 {
+    padding: 10px;
+}
+
+#title {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    
+}
+
 @media only screen and (min-width: 600px) {
     #logo {
         display: block;
