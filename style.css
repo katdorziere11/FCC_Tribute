@@ -1,3 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Text&display=swap');
+
+/* internal: <style> body { color: red } </style>
+
+external: link css code from another file; <link href="style.css" rel="stylesheet" />
+
+/* inline: add property to element you'd like to add styling to; ex: <h3 style="color:red"> */
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +27,7 @@ nav {
 #header {
     position: fixed;
     width: 100vw;
+    z-index: 1;
 }
 
 a {
@@ -64,14 +75,30 @@ section {
 }
 
 h2 {
-    padding: 10px;
+    padding: 15px;
 }
 
 #title {
     position: absolute;
     top: 50%;
     width: 100%;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    color: black;
+    z-index: 1;
+    letter-spacing: 2px;
     
+}
+
+main, #tribute-info {
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 1.5em;
+    line-height: 25pt;
+    letter-spacing: 1px;
+    padding-right: 1em;
+    padding-left: 1em;
+    
+
 }
 
 @media only screen and (min-width: 600px) {
