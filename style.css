@@ -57,10 +57,9 @@ a:visited {
     text-decoration: none;
 }
 
-#image {
+#hero {
     background-image: url(https://via.placeholder.com/600);
     height: 100vh;
-    width: 100vw;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -90,15 +89,24 @@ h2 {
     
 }
 
-main, #tribute-info {
+#seasons, #characters, #tribute-info {
     font-family: 'Big Shoulders Text', cursive;
     font-size: 1.5em;
     line-height: 25pt;
     letter-spacing: 1px;
     padding-right: 1em;
     padding-left: 1em;
-    
+}
 
+footer {
+    text-align: center;
+    margin-top: 10px;
+    border-style: solid;
+    background-color: rgba(184, 185, 183, 0.8);
+    font-style: italic;
+    border-color: darkgray; 
+    font-size: 23px;
+    width: 100%;
 }
 
 @media only screen and (min-width: 600px) {
