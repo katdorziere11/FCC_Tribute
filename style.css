@@ -20,7 +20,7 @@ nav {
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     justify-content: center;
     list-style-type: none;
-    background-color: rgba(152, 255, 152, 0.7);
+    background-color: rgb(34, 36, 34);
     flex-wrap: wrap;
 }
 
@@ -32,18 +32,25 @@ nav {
 
 a {
     text-decoration: none;
-    color: black;
+    color: whitesmoke;
 }
+
+a:hover {
+    color: orange;
+}
+
 
 
 
 li:hover {
     transform: scale(1.1);
+    
 }
 
 #logo {
     display: none;
     align-self: center;
+    width: 60px;
 }
 
 li {
@@ -55,15 +62,21 @@ li {
 
 a:visited {
     text-decoration: none;
+    color: orange;
 }
 
+p a:visited {
+    color: black;
+}
+
+
 #hero {
-    background-image: url(https://via.placeholder.com/600);
+    background-image: url(https://wallpaperaccess.com/full/230556.jpg);
     height: 100vh;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    opacity: 0.7;
+    opacity: 0.8;
     position: relative;
     background-repeat: no-repeat;
 
@@ -71,6 +84,20 @@ a:visited {
 
 #hero, h2, #characters, p {
     text-align: center;
+}
+
+#end-letter {
+    position: absolute;
+    top: -30%;
+    left: 80%;
+    width: 2em;
+    color: black;
+    z-index: 1;
+    
+}
+
+h1 {
+    display: inline;
 }
 
 
@@ -85,7 +112,7 @@ h3 {
 }
 
 #title {
-    position: absolute;
+    position: relative;
     top: 50%;
     width: 100%;
     font-family: 'Bebas Neue', cursive;
@@ -96,10 +123,10 @@ h3 {
     
 }
 
-#series, #characters, #tribute-info {
+#series, #tribute-info {
     font-family: 'Big Shoulders Text', cursive;
     font-size: 1.5em;
-    line-height: 25pt;
+    line-height: 1.3em;
     letter-spacing: 1px;
     padding-right: 1em;
     padding-left: 1em;
@@ -107,13 +134,31 @@ h3 {
     padding-top: 1em;
 }
 
-#tribute-info {
+#characters {
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 1.5em;
+    line-height: 25pt;
+    letter-spacing: 1px;
     padding-bottom: 1em;
-
+    padding-top: 1em;
+    background-color: rgb(250, 244, 244);
+    width: 100%;
 }
 
-#characters {
-    background-color: rgb(211,211,211);
+
+figure {
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+#pimg2 {
+    background-image: url(https://www.funimation.com/blog/wp-content/uploads/2019/10/1.jpg);
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    background-repeat: no-repeat;
 
 }
 
@@ -121,15 +166,22 @@ h3 {
     background-color: rgb(239, 239, 239);
 }
 
-p {
+button {
     border-style: double;
-    width: 25%;
-    margin: auto;
     transition: all 0.4s ease-in-out;
-    margin-top: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 20px;
+    padding: 0.5em;
 }
 
-p:hover {
+#learn {
+    display: flex;
+    justify-content: center;
+}
+
+button:hover {
     transform: scale(1.2);
 }
 
@@ -157,6 +209,6 @@ footer {
         justify-content: flex-start;
     }
 }
-/* 1. when  logo in header is clicked, bring back to the top
+/* fix learn more button
 
  */
