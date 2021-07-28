@@ -18,7 +18,7 @@ nav {
     display: flex;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    justify-content: space-around;
+    justify-content: center;
     list-style-type: none;
     background-color: rgba(152, 255, 152, 0.7);
     flex-wrap: wrap;
@@ -69,12 +69,19 @@ a:visited {
 
 }
 
-section {
+#hero, h2, #characters, p {
     text-align: center;
 }
 
+
 h2 {
     padding: 15px;
+    
+}
+
+h3 {
+    padding-bottom: 0.5em;
+    padding-top: 0.8em;
 }
 
 #title {
@@ -89,23 +96,49 @@ h2 {
     
 }
 
-#seasons, #characters, #tribute-info {
+#series, #characters, #tribute-info {
     font-family: 'Big Shoulders Text', cursive;
     font-size: 1.5em;
     line-height: 25pt;
     letter-spacing: 1px;
     padding-right: 1em;
     padding-left: 1em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+#tribute-info {
+    padding-bottom: 1em;
+
+}
+
+#characters {
+    background-color: rgb(211,211,211);
+
+}
+
+#series {
+    background-color: rgb(239, 239, 239);
+}
+
+p {
+    border-style: double;
+    width: 25%;
+    margin: auto;
+    transition: all 0.4s ease-in-out;
+    margin-top: 1em;
+}
+
+p:hover {
+    transform: scale(1.2);
 }
 
 footer {
     text-align: center;
-    margin-top: 10px;
     border-style: solid;
     background-color: rgba(184, 185, 183, 0.8);
-    font-style: italic;
     border-color: darkgray; 
-    font-size: 23px;
+    font-size: 20px;
     width: 100%;
 }
 
